@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$b2mi4w(xct5a8ae4&)fq-pu88m96p7w*l)gy0!gp9g^7q^qf7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -74,13 +74,15 @@ WSGI_APPLICATION = 'tstn.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default':{
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ["MYSQLDATABASE"],
         'USER': os.environ["MYSQLUSER"],
         'PASSWORD': os.environ["MYSQLPASSWORD"],
         'HOST': os.environ["MYSQLHOST"],
         'PORT': os.environ["MYSQLPORT"],
+     }
+}
 
 
 # Password validation
