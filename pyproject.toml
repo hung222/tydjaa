@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ghgt"
+version = "0.1.0"
+description = ""
+authors = ["kimijojo <khangyu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gunicorn = "^20.1.0"
+dj-database-url = "^1.2.0"
+mysqlclient = "^2.1.1"
+brotli = "^1.0.9"
+whitenoise = "^6.3.0"
+psycopg2 = "^2.9.5"
+asgiref = "^3.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
